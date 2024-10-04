@@ -1,0 +1,140 @@
+Component                      ,Qty ,Desciption
+
+7seg: 8*1; 8*4                 ,1
+blue                           ,6
+dot matrix                     ,1
+green                          ,8
+IR rx                          ,1
+IR tx                          ,1
+lcd                            ,1
+led bar                        ,1
+orange                         ,8
+pink                           ,10
+red                            ,11
+rgb                            ,2
+uv                             ,2
+white                          ,6
+yellow                         ,5
+12V 5W White LED (Square)      ,1
+1W White LED                   ,2
+
+M-M                            ,42
+M-F                            ,24
+F-F                            ,25
+16 Pin DIP Socket              ,4
+14 Pin DIP Socket              ,3
+8 Pin DIP Socket               ,2
+
+
+1.2o                           ,1
+1.8k                           ,10
+100k                           ,20
+100o                           ,31
+103 thermistor                 ,2
+10k                            ,8
+10M                            ,10
+150o                           ,6
+1k                             ,10
+1M                             ,8
+220o                           ,13
+2M                             ,1
+3.3k                           ,1
+3.9k                           ,1
+300k                           ,10
+330o                           ,11
+390o                           ,1
+4.7k                           ,10
+47k                            ,10
+5.1k                           ,10
+5k mt pot                      ,3
+5k pot                         ,1
+ldr                            ,4
+NTC 10D-9                      ,1
+pot 10k                        ,1
+SVC 431-10 varistor            ,1
+trim pot 1M                    ,1
+
+
+0.01uF cer                     ,5
+0.1uF cer                      ,9
+100pf cer                      ,5
+100uF 50V                      ,1
+10pf                           ,5
+10uF 50V                       ,2
+1uF 50 V (H105J)               ,1
+2.2uF 25V el                   ,6
+220uF 16V                      ,1
+220uF 63V                      ,1
+22uF 250V                      ,2
+22uF 25V                       ,1
+2pf cer                        ,5
+4.7nF 1kV                      ,1
+4.7uF 63V                      ,1
+470pf cer                      ,5
+47pf cer                       ,5
+DEC/MPB-X2 40/85/21/B          ,1
+varcap                         ,1
+
+!dht                           ,1
+2pin connector                 ,2
+8bit switch                    ,2
+audio jack                     ,1
+button                         ,8
+IR remote                      ,1
+joy stick                      ,1
+keypad                         ,1
+M27C4001-12B1                  ,1
+MB12A05 buzzer                 ,2
+motor driver 2-2               ,1
+relay SC5-S-DC5-7A 240V        ,1
+RFID mod+card+key              ,1
+servo SG90                     ,1
+switch                         ,4
+uno                            ,2
+4 Ch Logic Converter (Bi-dir)  ,2
+
+1N4002                         ,1
+1N4007                         ,7
+1N5819                         ,3
+2N2222A                        ,10
+BA159                          ,4
+FR107                          ,1
+FR20                           ,1
+TL431a shunt voltage regulator ,1
+zener                          ,2
+-------------------            ,--
+BC558                          ,1
+rectifier                      ,1
+S8050 NPN                      ,2
+S8550 PNP                      ,2
+
+
+74HC00N                        ,3   ,quad 2-Nand
+74HC08N                        ,5   ,quad 2-and
+74LS08N                        ,2   ,quad 2-and
+74LS20                         ,1   ,dual 4-nand
+74HC32N                        ,5   ,quad 2-or
+74LS47                         ,5   ,BCD-to-Seven-Segment Decoder
+74LS73N                        ,4   ,dual neg-edge jk w/ clear only
+74LS76N                        ,4   ,dual neg-edge jk w/ clear & preset
+74HC86N                        ,2   ,quad 2-xor
+74LS90                         ,3   ,decade counter (2x5)
+74LS93                         ,3   ,4bit bin. counter
+74LS109AN                      ,2   ,dual pos-edge jk w/ clear & preset
+74LS138                        ,3   ,single 3-Line To 8-Line Decoder/demux
+74HC139                        ,3   ,Dual 2-Line To 4-Line Decoder/demux
+74HC151                        ,2   ,8bit mux
+74LS173                        ,1   ,tristate 4bit D-ff
+74HC192                        ,1   ,presettable BCD Decade counter
+74LS244                        ,1   ,tristate 8-channel 5V buffers
+74HC595                        ,4   ,tristate 8-bit SIPO shift register
+NE555P                         ,3   ,precision timers
+CD4001BE                       ,2   ,CMOS quad 2-nor
+LM324                          ,1   ,quad opamp
+LM358                          ,2   ,dual opamp
+LM386                          ,1   ,low voltage power amplifier
+EL817C                         ,2   ,IR optocoupler
+L293D                          ,1   ,quad motor driver
+
+ADXL345                        ,1   ,13-bit accelerometer
+BMP280                         ,1   ,absolute barometric pressure
