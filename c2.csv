@@ -1,38 +1,12 @@
 Component                       ,Qty  ,Mfd       ,Desciption
 
-M-M                             ,60
-M-F                             ,17
-F-F                             ,17
-female header                   ,40
-15A fuse                        ,1
-aux cable                       ,1
-IR remote                       ,1
-dial tone decoder (MT8870DE)    ,1
-wire connector                  ,2
-pizo buzzer                     ,2
-relay SC5-S-DC5-7A 240V         ,1    ,
-joy stick                       ,1    ,
-250v mouse type switch          ,1    ,
-aux splitter                    ,1
-RFID reader                     ,1
-RFID card                       ,1
-RFID key                        ,1
-servo                           ,2
-servo shafts                    ,1    ,
-IR tx/rx sensor                 ,2    ,
-breadboard                      ,4
-
-IC base - 16 pin                ,4
-IC base - 14 pin                ,2
-IC base - 8 pin                 ,2
-
-level Converter                 ,2    ,          ,3.3v to 5v bidirectional level converter
-IR rx                           ,1
-
+----Switches----
+250v mouse type switch          ,1
 push button                     ,8
 slide switch                    ,4
 dip switch - 14                 ,2
 
+----Display Modules----
 common cathode 7seg             ,1
 common anode 7seg               ,4
 common cathode 7*4seg           ,1
@@ -41,36 +15,36 @@ dot matrix Square               ,1
 16*4 LCD                        ,1
 LED bar graph                   ,1
 
-rgb CA                          ,1
-rgb CC                          ,1
-UV LED                          ,2
+----LEDs----
+RGB Commom anode                ,1
+RGB Common cathode              ,1
+UV                              ,2
 white                           ,6
 blue                            ,5
-12V 5W White LED (Square)       ,1    ,
-1W White LED                    ,2    ,
+12V 5W White (Square)           ,1
+1W White                        ,2
 incandescent - small            ,7
 green                           ,7
-pink                    cathode ,10
+pink                            ,10
 yellow                          ,4
 red                             ,11
 orange                          ,8
-IR tx 5mm                       ,1
-IR tx 3mm                       ,2
-IR rx 3mm                       ,2
-IR rx 5mm                       ,1
+IR 5mm                          ,1
+IR 3mm                          ,2
 
-
+----ICs----
 ATMEGA 328-PU                   ,1    ,Microchip ,CMOS 8-bit microcontroller
 ATMEGA 8A-PU                    ,1    ,Microchip ,CMOS 8-bit microcontrolle
+CD4518BE                        ,1    ,TI        ,CMOS Dual BCD Up counter
 CD4001BE                        ,2    ,TI        ,CMOS NOR gate
 CD4020BD                        ,1    ,HLF       ,14-stage Ripple carry binary counter/divider
 CD4060BE                        ,1    ,TI        ,14-stage Ripple carry binary counter/divider and oscillator
+M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 EL817                           ,3    ,          ,4 pin IR optocoupler
 L293D                           ,1    ,ST        ,Quad Half-H Drivers
 LM324N                          ,1    ,TI        ,Quad 32-V 1-MHz Opamp
 LM358N                          ,2    ,TI        ,Low-Power Dual-opamp
 LM386N                          ,1    ,          ,Low Voltage Audio Power Amplifier
-M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 NE555P                          ,4    ,TI        ,Precision Timers
 SN74HC00N                       ,2    ,          ,Quadruple 2-Input NAND Gates
 SN74HC32N                       ,5    ,          ,Quadruple 2-Input OR Gate
@@ -82,16 +56,18 @@ SN74HC595N                      ,2    ,NXP       ,8-Bit Shift Reg. With 3-State 
 SN74HC595N                      ,2    ,TI        ,8-Bit Shift Reg. With 3-State Output Reg.
 SN74LS08N                       ,5    ,TI        ,Quadruple 2-Input AND Gates
 SN74LS20N                       ,1    ,          ,Dual 4-Input Positive-NAND Gates
-SN74LS47N                       ,1    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
+SN74LS47N                       ,4    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
+SN74LS47N                       ,1    ,TI        ,BCD-To-7-Segment Decoders/Drivers
 SN74LS73N                       ,3    ,HLF       ,Dual J-K Flip-Flops With Clear
 SN74LS76N                       ,4    ,HLF       ,Dual J-K Flip-Flops With Preset And Clear
-SN74LS90N                       ,1    ,HLF       ,Decade counter
-SN74LS93N                       ,1    ,HLF       ,4-bit binary counter
+SN74LS90N                       ,3    ,HLF       ,Decade counter
+SN74LS93N                       ,3    ,HLF       ,4-bit binary counter
 SN74LS109AN                     ,2    ,TI        ,Dual J-K Positive-Edge-Triggered Flip-Flops With Preset & Clear
 SN74LS138N                      ,3    ,          ,3:8 line decoder/demux
 SN74LS173AN                     ,1    ,Motorola  ,4-Bit D-Type Registers With 3-State Outputs
 SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers With 3-State Outputs
 
+----Variable Resistors----
 1k pot                          ,1
 5k pot                          ,1
 5k turnpot                      ,3
@@ -101,6 +77,7 @@ SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers
 100k preset                     ,2
 1M pot                          ,1
 
+----Resistors----
 100o                            ,~31
 150o                            ,11
 220o                            ,21
@@ -122,19 +99,19 @@ SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers
 470k                            ,10
 1M                              ,8
 10M                             ,10
-ldr                             ,4
 
-2p                              ,5    ,
-3p                              ,5    ,
-4.7p                            ,5    ,
-22p                             ,5    ,
-47p                             ,5    ,
-100 - 10p                       ,5    ,
-101 - 100p                      ,5    ,
-470 - 470p                      ,5    ,
-102 - 1n                        ,5    ,
-103 - 10n                       ,5    ,
-104 - 100n                      ,9    ,
+----Capacitors----
+2p                              ,5    ,          ,cer
+3p                              ,5    ,          ,cer
+4.7p                            ,5    ,          ,cer
+22p                             ,5    ,          ,cer
+47p                             ,5    ,          ,cer
+100 - 10p                       ,5    ,          ,cer
+101 - 100p                      ,5    ,          ,cer
+470 - 470p                      ,5    ,          ,cer
+102 - 1n                        ,5    ,          ,cer
+103 - 10n                       ,5    ,          ,cer
+104 - 100n                      ,9    ,          ,cer
 105 - 1u                        ,5    ,          ,tantalum
 1u 250v                         ,1    ,          ,film
 1u 400v                         ,1    ,          ,film
@@ -145,11 +122,13 @@ ldr                             ,4
 22u 25v                         ,1    ,          ,elec
 220u 16v                        ,1    ,          ,elec
 100u 25v                        ,3    ,          ,elec
-2A683J                          ,5
-2A332J                          ,2
-2A153J                          ,5
+2A683J                          ,5    ,          ,polye
+2A332J                          ,2    ,          ,polye
+2A153J                          ,5    ,          ,polye
 varcap 20p                      ,1    ,
+220pf gauge                     ,1
 
+---Transistors----
 BC139                           ,2
 BC547                           ,7
 BC548                           ,7
@@ -160,24 +139,62 @@ S8550                           ,1
 S8050                           ,1
 TL431A                          ,1
 
+----Dev boards----
 arduino uno                     ,2
-micro usb powe connector        ,3
-rectifier                       ,1
-NTC 10D-9                       ,1
+ESP32 NodeMCU                   ,1
+
+----Power & Connectors----
+IC base - 16 pin                ,4
+IC base - 14 pin                ,2
+IC base - 8 pin                 ,2
+M-M  jumper                     ,60
+M-F  jumper                     ,17
+F-F  jumper                     ,17
+female header                   ,40
+male header                     ,16
+aux extension                   ,1    ,          ,aux to aux
+aux splitter                    ,1    ,          ,Splits audio to 2 Ch
+aux breakout wire               ,1    ,          ,aux to 2 pins
+USB breakout wire               ,1    ,          ,USB to 4 pins
+wire connector                  ,2
+breadboard                      ,4
+micro usb power connector       ,3
+USB A                           ,1
+9v battery                      ,2
+9v battery to DC jack connector ,2
+
+----Diodes----
+1N4007                          ,12   ,          ,General purpose Silicon Rectifier Diodes 1A 1000V
+1N5408                          ,1    ,          ,Silicon Rectifier Diodes 3A 1000V
+
+----Sensors----
+joy stick                       ,1    ,
+RFID reader                     ,1
+RFID card                       ,1
+RFID key                        ,1
+IR remote                       ,1
+IR tx/rx sensor module          ,2    ,
+ldr                             ,4
+IR photodiode 3mm               ,2
+IR photodiode 5mm               ,2
+TSOP38238                       ,2    ,          ,IR Transducer
 103 thermistor                  ,2
 keypad                          ,1
-9v battery                      ,2
-dc jack connector               ,2
-usb A                           ,1
-32kHz quartz oscillator         ,2
-
-220pf gauge                     ,1
-regulator                       ,1    ,          ,???
-
-1N5408                          ,1    ,          ,Silicon Rectifier Diodes 3A 1000V
-1N4007                          ,12   ,          ,Silicon Rectifier Diodes 3A 1000V
-L293D module                    ,1    ,          ,motor driver
-
 dht11                           ,1
 ADXL345                         ,1    ,          ,13-bit accelerometer
 BMP280                          ,1    ,          ,absolute barometric pressure
+
+----Misc----
+NTC 10D-9                       ,1
+rectifier                       ,1
+32kHz quartz oscillator         ,2
+regulator                       ,1    ,          ,???
+L293D module                    ,1    ,          ,motor driver
+level Converter                 ,2    ,          ,3.3v to 5v bidirectional level converter
+dial tone decoder (MT8870DE)    ,1
+15A fuse                        ,1
+pizo buzzer                     ,2
+relay SC5-S-DC5-7A 240V         ,1
+servo                           ,2
+DC motor                        ,6
+servo shafts                    ,1
