@@ -19,32 +19,42 @@ LED bar graph                   ,1
 RGB Commom anode                ,1
 RGB Common cathode              ,1
 UV                              ,2
-white                           ,6
-blue                            ,5
 12V 5W White (Square)           ,1
 1W White                        ,2
 incandescent - small            ,7
-green                           ,7
+white                           ,6
+blue                            ,8
+green                           ,12
 pink                            ,10
-yellow                          ,4
-red                             ,11
+yellow                          ,8
+red                             ,19
+red 3mm                         ,8
 orange                          ,8
 IR 5mm                          ,1
 IR 3mm                          ,2
 
+----Oscillator----
+32kHz                           ,2
+8MHz                            ,1
+12MHz                           ,1
+16MHz                           ,1
+
 ----ICs----
+AT89S52                         ,1    ,Atmel     ,8051 compatable microprocessor
 ATMEGA 328-PU                   ,1    ,Microchip ,CMOS 8-bit microcontroller
-ATMEGA 8A-PU                    ,1    ,Microchip ,CMOS 8-bit microcontrolle
-CD4518BE                        ,1    ,TI        ,CMOS Dual BCD Up counter
+ATMEGA 8A-PU                    ,1    ,Microchip ,CMOS 8-bit microcontroller
 CD4001BE                        ,2    ,TI        ,CMOS NOR gate
 CD4020BD                        ,1    ,HLF       ,14-stage Ripple carry binary counter/divider
+CD4052BE                        ,1    ,TI        ,8:2 analog mux/demux
 CD4060BE                        ,1    ,TI        ,14-stage Ripple carry binary counter/divider and oscillator
-M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
+CD4066BCN                       ,1    ,          ,CMOS Quad Bilateral Switch
+CD4518BE                        ,1    ,TI        ,CMOS Dual BCD Up counter
 EL817                           ,3    ,          ,4 pin IR optocoupler
 L293D                           ,1    ,ST        ,Quad Half-H Drivers
 LM324N                          ,1    ,TI        ,Quad 32-V 1-MHz Opamp
 LM358N                          ,2    ,TI        ,Low-Power Dual-opamp
 LM386N                          ,1    ,          ,Low Voltage Audio Power Amplifier
+M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 NE555P                          ,4    ,TI        ,Precision Timers
 SN74HC00N                       ,2    ,          ,Quadruple 2-Input NAND Gates
 SN74HC32N                       ,5    ,          ,Quadruple 2-Input OR Gate
@@ -56,8 +66,8 @@ SN74HC595N                      ,2    ,NXP       ,8-Bit Shift Reg. With 3-State 
 SN74HC595N                      ,2    ,TI        ,8-Bit Shift Reg. With 3-State Output Reg.
 SN74LS08N                       ,5    ,TI        ,Quadruple 2-Input AND Gates
 SN74LS20N                       ,1    ,          ,Dual 4-Input Positive-NAND Gates
-SN74LS47N                       ,4    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
 SN74LS47N                       ,1    ,TI        ,BCD-To-7-Segment Decoders/Drivers
+SN74LS47N                       ,4    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
 SN74LS73N                       ,3    ,HLF       ,Dual J-K Flip-Flops With Clear
 SN74LS76N                       ,4    ,HLF       ,Dual J-K Flip-Flops With Preset And Clear
 SN74LS90N                       ,3    ,HLF       ,Decade counter
@@ -66,6 +76,9 @@ SN74LS109AN                     ,2    ,TI        ,Dual J-K Positive-Edge-Trigger
 SN74LS138N                      ,3    ,          ,3:8 line decoder/demux
 SN74LS173AN                     ,1    ,Motorola  ,4-Bit D-Type Registers With 3-State Outputs
 SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers With 3-State Outputs
+
+----Inductor----
+1u                              ,2    ,          ,axial
 
 ----Variable Resistors----
 1k pot                          ,1
@@ -78,26 +91,40 @@ SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers
 1M pot                          ,1
 
 ----Resistors----
+22o                             ,10
+47o                             ,10
 100o                            ,~31
 150o                            ,11
 220o                            ,21
+270o                            ,20
 330o                            ,10
 470o                            ,8
+510o                            ,20
 560o                            ,10
+750o                            ,20
+820o                            ,30
 1k                              ,>100
+1.2k                            ,20
 1.7k                            ,10
+2k                              ,20
+2.2k                            ,10
 3.3k                            ,1
 4.7k                            ,8
 5.1k                            ,10
 5.6k                            ,10
 10k                             ,7
 47k                             ,10
+82k                             ,10
 100k                            ,18
 120k                            ,30
 220k                            ,10
+270k                            ,20
 300k                            ,9
 470k                            ,10
+560k                            ,10
+820k                            ,10
 1M                              ,8
+1.5M                            ,10
 10M                             ,10
 
 ----Capacitors----
@@ -144,9 +171,11 @@ arduino uno                     ,2
 ESP32 NodeMCU                   ,1
 
 ----Power & Connectors----
-IC base - 16 pin                ,4
-IC base - 14 pin                ,2
 IC base - 8 pin                 ,2
+IC base - 14 pin                ,2
+IC base - 16 pin                ,4
+IC base - 28 pin                ,1
+IC base - 40 pin                ,2
 M-M  jumper                     ,60
 M-F  jumper                     ,17
 F-F  jumper                     ,17
@@ -162,6 +191,8 @@ micro usb power connector       ,3
 USB A                           ,1
 9v battery                      ,2
 9v battery to DC jack connector ,2
+9v battery connector            ,3
+Type C panel mount F connector  ,1
 
 ----Diodes----
 1N4007                          ,12   ,          ,General purpose Silicon Rectifier Diodes 1A 1000V
@@ -187,7 +218,6 @@ BMP280                          ,1    ,          ,absolute barometric pressure
 ----Misc----
 NTC 10D-9                       ,1
 rectifier                       ,1
-32kHz quartz oscillator         ,2
 regulator                       ,1    ,          ,???
 L293D module                    ,1    ,          ,motor driver
 level Converter                 ,2    ,          ,3.3v to 5v bidirectional level converter
