@@ -53,6 +53,7 @@ EL817                           ,3    ,          ,4 pin IR optocoupler
 L293D                           ,1    ,ST        ,Quad Half-H Drivers
 LM324N                          ,1    ,TI        ,Quad 32-V 1-MHz Opamp
 LM358N                          ,2    ,TI        ,Low-Power Dual-opamp
+LM358P                          ,1    ,TI        ,Low-Power Dual-opamp
 LM386N                          ,1    ,          ,Low Voltage Audio Power Amplifier
 M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 NE555P                          ,4    ,TI        ,Precision Timers
@@ -142,60 +143,60 @@ SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers
 10M                             ,10
 
 ----Capacitors----
-1p, 5, , cer
-2p, 5, , cer
-2.4p, 1, , cer '
-2.7p, 1, , cer '
-3p, 5, , cer
-4.7p, 5, , cer
-3.9p, 2, , cer
-8.2p, 7, , cer
-10p, 5, , cer
-12p - 12K, 10, , tantalum
-22p, 5, , cer
-47p, 5, , cer
-50p, 3, , cer
-51p, 1, , cer '
-56p, 5, , cer
-68p, 10, , cer
-100p - 101, 5, , cer
-100p - 101, 1, , blue '
-220p - 221, 2, , cer
-330p - 331, 11, , cer
-330p - 500v - 331, 1, , cer
-330p - BC391J, 10, , axial foil??
-470p, 5, , cer
-500p - 501, 1, ,cer '
-680p - 681, 5, , cer
-820p - 821J, 6, , polye "
-1n - 102, 10, , cer
-1n - 630v - 2J102K, 2, , polye
-2.2n - 222, 1, , cer
-2.2n - 1250v - 222J, 1, , polye "
-3.3n - 100v - 2A332J,2    ,          ,polye
-4.7n - 1250v - 472J, 1, , polye "
-8.2n - 1250v - 822J, 1, , polye "
-10n - 103, 5, , cer
-15n - 153, 1, , cer '
-15n - 250v - 153J, 1, , polye "
-15n - 100v - 2A153J,5    ,          ,polye
-47n - 250v - 473J/47nJ, 3, , polye "
-47n - 310v - 473J, 1, , polye "
-68n - 400v - 683J, 1, , polye "
-100n - 104, 8, , cer
-100n - 104, 1, , tantalum '
-150n - 400v - 154J, 2, , polye "
-270n - 400v - 274K, 1, , polye "
-680n - 100v - 2A683J,5    ,          ,polye
-1u - 105, 5, , tantalum
-1u - 630V - 2J105K, 2,, polye
-2.2u - 25v, 5, , elect
-10u - 50v, 3, , elect
-10u - 63v, 5, , elect
-22u - 25v, 1, , elect
-22u - 50v, 1, , elect
-100u - 25v,3,,elect
-220u - 16v,1,,elect
+1p                              ,5    ,          ,cer
+2p                              ,5    ,          ,cer
+2.4p                            ,1    ,          ,cer (coll-1)
+2.7p                            ,1    ,          ,cer (coll-1)
+3p                              ,5    ,          ,cer
+4.7p                            ,5    ,          ,cer
+3.9p                            ,2    ,          ,cer
+8.2p                            ,7    ,          ,cer
+10p                             ,5    ,          ,cer
+12p - 12K                       ,10   ,          ,tantalum
+22p                             ,5    ,          ,cer
+47p                             ,5    ,          ,cer
+50p                             ,3    ,          ,cer
+51p                             ,1    ,          ,cer (coll-1)
+56p                             ,5    ,          ,cer
+68p                             ,10   ,          ,cer
+100p - 101                      ,5    ,          ,cer
+100p - 101                      ,1    ,          ,blue (coll-1)
+220p - 221                      ,2    ,          ,cer
+330p - 331                      ,11   ,          ,cer
+330p - 500v - 331               ,1    ,          ,cer
+330p - BC391J                   ,10   ,          ,axial foil??
+470p                            ,5    ,          ,cer
+500p - 501                      ,1    ,          ,cer (coll-1)
+680p - 681                      ,5    ,          ,cer
+820p - 821J                     ,6    ,          ,polye (coll-2)
+1n - 102                        ,10   ,          ,cer
+1n - 630v - 2J102K              ,2    ,          ,polye
+2.2n - 222                      ,1    ,          ,cer
+2.2n - 1250v - 222J             ,1    ,          ,polye (coll-2)
+3.3n - 100v - 2A332J            ,2    ,          ,polye
+4.7n - 1250v - 472J             ,1    ,          ,polye (coll-2)
+8.2n - 1250v - 822J             ,1    ,          ,polye (coll-2)
+10n - 103                       ,5    ,          ,cer
+15n - 153                       ,1    ,          ,cer (coll-1)
+15n - 250v - 153J               ,1    ,          ,polye (coll-2)
+15n - 100v - 2A153J             ,5    ,          ,polye
+47n - 250v - 473J/47nJ          ,3    ,          ,polye (coll-2)
+47n - 310v - 473J               ,1    ,          ,polye (coll-2)
+68n - 400v - 683J               ,1    ,          ,polye (coll-2)
+100n - 104                      ,8    ,          ,cer
+100n - 104                      ,1    ,          ,tantalum (coll-1)
+150n - 400v - 154J              ,2    ,          ,polye (coll-2)
+270n - 400v - 274K              ,1    ,          ,polye (coll-2)
+680n - 100v - 2A683J            ,5    ,          ,polye
+1u - 105                        ,5    ,          ,tantalum
+1u - 630V - 2J105K              ,2    ,          ,polye
+2.2u - 25v                      ,5    ,          ,elect
+10u - 50v                       ,3    ,          ,elect
+10u - 63v                       ,5    ,          ,elect
+22u - 25v                       ,1    ,          ,elect
+22u - 50v                       ,1    ,          ,elect
+100u - 25v                      ,3    ,          ,elect
+220u - 16v                      ,1    ,          ,elect
 varcap 20p                      ,1    ,
 220pf gauge                     ,1
 
