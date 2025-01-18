@@ -1,4 +1,4 @@
-Component                       ,Qty  ,Mfd       ,Desciption
+Component                       ,Qty  ,Mfr       ,Desciption
 
 ----Switches----
 250v mouse type switch          ,1
@@ -52,6 +52,7 @@ CD4066BCN                       ,1    ,          ,CMOS Quad Bilateral Switch
 CD4518BE                        ,1    ,TI        ,CMOS Dual BCD Up counter
 EL817                           ,3    ,          ,4 pin IR optocoupler
 L293D                           ,1    ,ST        ,Quad Half-H Drivers
+LM317T                          ,4    ,XBLW      ,1.2 to 37V 1.5A voltage regulator
 LM324N                          ,1    ,TI        ,Quad 32-V 1-MHz Opamp
 LM358N                          ,2    ,TI        ,Low-Power Dual-opamp
 LM358P                          ,1    ,TI        ,Low-Power Dual-opamp
@@ -60,30 +61,31 @@ M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 NE555P                          ,4    ,TI        ,Precision Timers
 SN74HC00N                       ,2    ,          ,Quadruple 2-Input NAND Gates
 SN74HC04N                       ,2    ,HLF       ,Hex inverter
-SN74HC32N                       ,5    ,          ,Quadruple 2-Input OR Gate
-SN74HC86N                       ,2    ,TI        ,Quadruple 2-Input XOR Gates
-SN74HC139N                      ,3    ,TI        ,Dual 2:4 Decoders/Demux
-SN74HC151N                      ,2    ,          ,8:1 Data Selectors/Mux
-SN74HC192N                      ,1
-SN74HC573L                      ,2    ,          ,
-SN74HC595N                      ,2    ,NXP       ,8-Bit Shift Reg. With 3-State Output Reg.
-SN74HC595N                      ,2    ,TI        ,8-Bit Shift Reg. With 3-State Output Reg.
 SN74LS08N                       ,5    ,TI        ,Quadruple 2-Input AND Gates
 SN74LS20N                       ,1    ,          ,Dual 4-Input Positive-NAND Gates
+SN74HC32N                       ,5    ,          ,Quadruple 2-Input OR Gate
 SN74LS47N                       ,1    ,TI        ,BCD-To-7-Segment Decoders/Drivers
 SN74LS47N                       ,4    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
 SN74LS73N                       ,3    ,HLF       ,Dual J-K Flip-Flops With Clear
 SN74LS76N                       ,4    ,HLF       ,Dual J-K Flip-Flops With Preset And Clear
 SN74LS83N                       ,1    ,HLF       ,4 bit binary adder with fast carry
+SN74HC86N                       ,2    ,TI        ,Quadruple 2-Input XOR Gates
 SN74LS90N                       ,3    ,HLF       ,Decade counter
 SN74LS93N                       ,3    ,HLF       ,4-bit binary counter
 SN74LS109AN                     ,2    ,TI        ,Dual J-K Positive-Edge-Triggered Flip-Flops With Preset & Clear
-SN74LS151N                      ,1    ,HLF       ,8:1 Data Selectors/Mux
 SN74LS138N                      ,3    ,          ,3:8 line decoder/demux
+SN74HC139N                      ,3    ,TI        ,Dual 2:4 Decoders/Demux
+SN74HC151N                      ,2    ,          ,8:1 Data Selectors/Mux
+SN74LS151N                      ,1    ,HLF       ,8:1 Data Selectors/Mux
 SN74LS173AN                     ,1    ,Motorola  ,4-Bit D-Type Registers With 3-State Outputs
-SN74LS194N                      ,1    ,TI        ,
+SN74HC192N                      ,1    ,          ,Presettable Synchronous 4-Bit Up/Down Counters
+SN74LS194N                      ,1    ,TI        ,4-Bit Bidirectional Universal Shift Register
 SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers With 3-State Outputs
-UA741CP                         ,3    ,          ,
+SN74HC573L                      ,2    ,          ,Octal Transparent D-Type Latches With 3-State Outputs
+SN74HC595N                      ,2    ,NXP       ,8-Bit Shift Reg. With 3-State Output Reg.
+SN74HC595N                      ,2    ,TI        ,8-Bit Shift Reg. With 3-State Output Reg.
+TL431A                          ,1    ,          ,±1% Precision 36V adjustable shunt regulator; Ika -100+150mA
+UA741CP                         ,3    ,          ,General-Purpose Op-amp
 ULN2003APG                      ,1    ,          ,Darlington array
 
 ----Inductor----
@@ -233,22 +235,21 @@ varcap 20p                      ,1    ,
 220pf gauge                     ,1
 
 ---Transistors----
-BC139                           ,2
-BC547                           ,7
-BC548                           ,7
-BD140                           ,1
-2N2222A                         ,10
-BC558                           ,1
-S8550                           ,1
-S8050                           ,1
-TL431A                          ,1
-TIP122                          ,5
-2N3904                          ,3
-2N3906                          ,3
-BF494B                          ,6
+2N2222A                         ,10   ,          ,NPN high speed switching; β 35-300; Vce 40V; Ic 500mA
+2N3904                          ,3    ,          ,NPN General purpose; β 100-400; Vce 40V; Ic 200mA;
+2N3906                          ,3    ,          ,PNP General purpose; β 100-400; Vce 40V; Ic 200mA;
+BC139                           ,2    ,          ,PNP Audio amplifier
+BC547                           ,7    ,          ,NPN General purpose amplifier; Ic 500mA
+BC548                           ,7    ,          ,NPN General purpose amplifier; Ic 100mA
+BC558                           ,1    ,          ,PNP Amplifier; β ~110; Vce 30V; Ic 100mA
+BD140                           ,1    ,          ,PNP Medium power linear and switching; β 25; Vce -80V; Ic 1.5A
+BF494B                          ,6    ,          ,NPN medium frequency (RF);f 100Mhz; hFE 110-215; Vce 30V; Ic 30mA
+S8050                           ,1    ,          ,NPN 2W output amplifier of portable radios in class B push-pull; β 40-300; Vce 25V; Ic 1.5A;
+S8550                           ,1    ,          ,PNP 2W output amplifier of portable radios in class B push-pull; β 40-300; Vce 25V; Ic 1.5A;
+TIP122                          ,5    ,          ,NPN Low voltage complementary power Darlington transistors; β >1000; Vce 100V; Ic 5A; Ib 0.12A
 
 ----Dev boards----
-arduino uno                     ,2
+Arduino UNO                     ,2
 ESP32 NodeMCU                   ,1
 
 ----Power & Connectors----
@@ -257,18 +258,18 @@ IC base - 14 pin                ,2
 IC base - 16 pin                ,4
 IC base - 28 pin                ,1
 IC base - 40 pin                ,2
-M-M  jumper                     ,60
-M-F  jumper                     ,17
-F-F  jumper                     ,17
-female header                   ,40
-male header                     ,16
-aux extension                   ,1    ,          ,aux to aux
-aux splitter                    ,1    ,          ,Splits audio to 2 Ch
-aux breakout wire               ,1    ,          ,aux to 2 pins
+M-M jumper                     ,60
+M-F jumper                     ,17
+F-F jumper                     ,17
+Female header                   ,40
+Male header                     ,16
+Aux extension                   ,1    ,          ,aux to aux
+Aux splitter                    ,1    ,          ,Splits audio to 2 Ch
+Aux breakout wire               ,1    ,          ,aux to 2 pins
 USB breakout wire               ,1    ,          ,USB to 4 pins
-wire connector                  ,2
-breadboard                      ,4
-micro usb power connector       ,3
+Wire connector                  ,2
+Breadboard                      ,4
+Micro usb power connector       ,3
 USB A                           ,1
 9v battery                      ,2
 9v battery to DC jack connector ,2
@@ -281,29 +282,28 @@ Type C panel mount F connector  ,1
 ----Diodes----
 1N4007                          ,12   ,          ,General purpose Silicon Rectifier Diodes 1A 1000V
 1N5408                          ,1    ,          ,Silicon Rectifier Diodes 3A 1000V
-1N4148                          ,5    ,          ,Small Signal Fast Switching Diodes
+1N4148                          ,5    ,          ,Small Signal Fast Switching Diodes 500mA 75V
 
 ----Sensors----
-joy stick                       ,1    ,
+Joy stick                       ,1    ,
 RFID reader                     ,1
 RFID card                       ,1
 RFID key                        ,1
 IR remote                       ,1
 IR tx/rx sensor module          ,2    ,
-ldr                             ,4
+LDR                             ,4
 IR photodiode 3mm               ,2
 IR photodiode 5mm               ,2
 TSOP38238                       ,2    ,          ,IR Transducer
 103 thermistor                  ,2
-keypad                          ,1
-dht11                           ,1
+Keypad                          ,1
+DHT11                           ,1
 ADXL345                         ,1    ,          ,13-bit accelerometer
 BMP280                          ,1    ,          ,absolute barometric pressure
-3144                            ,1    ,          ,absolute barometric pressure
+3144                            ,1    ,          ,Hall Effect
 
 ----Misc----
 NTC 10D-9                       ,1
-LM317T                          ,4    ,XBLW      ,1.2 to 37V 1.5A voltage regulator
 rectifier                       ,1
 regulator                       ,1    ,          ,???
 L293D module                    ,1    ,          ,motor driver
