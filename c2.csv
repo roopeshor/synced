@@ -81,12 +81,13 @@ SN74LS173AN                     ,1    ,Motorola  ,4-Bit D-Type Registers With 3-
 SN74HC192N                      ,1    ,          ,Presettable Synchronous 4-Bit Up/Down Counters
 SN74LS194N                      ,1    ,TI        ,4-Bit Bidirectional Universal Shift Register
 SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers With 3-State Outputs
+SN74AS245N                      ,1    ,TI        ,Octal Bus Transceivers With 3-State Outputs
 SN74HC573L                      ,2    ,          ,Octal Transparent D-Type Latches With 3-State Outputs
 SN74HC595N                      ,2    ,NXP       ,8-Bit Shift Reg. With 3-State Output Reg.
 SN74HC595N                      ,2    ,TI        ,8-Bit Shift Reg. With 3-State Output Reg.
 TL431A                          ,1    ,          ,±1% Precision 36V adjustable shunt regulator; Ika -100+150mA
 UA741CP                         ,3    ,          ,General-Purpose Op-amp
-ULN2003APG                      ,1    ,          ,Darlington array
+ULN2003APG                      ,1    ,          ,NPN 7-ch Darlington Sink Driver with clamp diode; Vin 30V; Ich 500mA
 
 ----Inductor----
 1u                              ,2    ,          ,axial
