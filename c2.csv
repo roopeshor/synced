@@ -5,6 +5,7 @@ Component                       ,Qty  ,Mfd       ,Desciption
 push button                     ,8
 slide switch                    ,4
 dip switch - 14                 ,2
+SPDT                            ,2
 
 ----Display Modules----
 common cathode 7seg             ,1
@@ -58,6 +59,7 @@ LM386N                          ,1    ,          ,Low Voltage Audio Power Amplif
 M27C4001-12B1                   ,1    ,          ,512K*8 EEPROM
 NE555P                          ,4    ,TI        ,Precision Timers
 SN74HC00N                       ,2    ,          ,Quadruple 2-Input NAND Gates
+SN74HC04N                       ,2    ,HLF       ,Hex inverter
 SN74HC32N                       ,5    ,          ,Quadruple 2-Input OR Gate
 SN74HC86N                       ,2    ,TI        ,Quadruple 2-Input XOR Gates
 SN74HC139N                      ,3    ,TI        ,Dual 2:4 Decoders/Demux
@@ -72,15 +74,18 @@ SN74LS47N                       ,1    ,TI        ,BCD-To-7-Segment Decoders/Driv
 SN74LS47N                       ,4    ,HLF       ,BCD-To-7-Segment Decoders/Drivers
 SN74LS73N                       ,3    ,HLF       ,Dual J-K Flip-Flops With Clear
 SN74LS76N                       ,4    ,HLF       ,Dual J-K Flip-Flops With Preset And Clear
+SN74LS83N                       ,1    ,HLF       ,4 bit binary adder with fast carry
 SN74LS90N                       ,3    ,HLF       ,Decade counter
 SN74LS93N                       ,3    ,HLF       ,4-bit binary counter
 SN74LS109AN                     ,2    ,TI        ,Dual J-K Positive-Edge-Triggered Flip-Flops With Preset & Clear
+SN74LS151N                      ,1    ,HLF       ,8:1 Data Selectors/Mux
 SN74LS138N                      ,3    ,          ,3:8 line decoder/demux
 SN74LS173AN                     ,1    ,Motorola  ,4-Bit D-Type Registers With 3-State Outputs
 SN74LS194N                      ,1    ,TI        ,
 SN74LS244N                      ,1    ,HLF       ,Octal Buffers and Line Drivers With 3-State Outputs
 UA741CP                         ,3    ,          ,
 ULN2003APG                      ,1    ,          ,Darlington array
+
 ----Inductor----
 1u                              ,2    ,          ,axial
 
@@ -108,12 +113,15 @@ ULN2003APG                      ,1    ,          ,Darlington array
 ----Resistors----
 1.5o                            ,5
 7.2o                            ,5
-22o                             ,10
+10o                             ,10
+22o                             ,13
 47o                             ,10
+56o                             ,5
 65o                             ,5    ,          ,1W
+82o                             ,5
 100o                            ,~31
 150o                            ,11
-220o                            ,21
+220o                            ,23
 270o                            ,20
 330o                            ,14
 330o                            ,8    ,          ,1/8W
@@ -130,14 +138,20 @@ ULN2003APG                      ,1    ,          ,Darlington array
 2k                              ,20
 2k                              ,15   ,          ,1/8W
 2.2k                            ,10
+2.7k                            ,10
 3k                              ,9
 3.3k                            ,1
+3.9k                            ,10
 4.7k                            ,8
 5.1k                            ,10
 5.6k                            ,10
 5.6k                            ,5    ,          ,1/8W
 7.5k                            ,5
+8.2k                            ,6
 10k                             ,12
+15k                             ,10
+22k                             ,20
+33k                             ,10
 47k                             ,14
 68k                             ,5
 82k                             ,10
@@ -146,6 +160,7 @@ ULN2003APG                      ,1    ,          ,Darlington array
 220k                            ,10
 270k                            ,20
 300k                            ,9
+330k                            ,5
 390k                            ,5
 470k                            ,10
 510k                            ,9
@@ -154,6 +169,7 @@ ULN2003APG                      ,1    ,          ,Darlington array
 1M                              ,8
 1M                              ,5    ,          ,1W
 1.5M                            ,10
+2.2M                            ,5
 10M                             ,10
 
 ----Capacitors----
@@ -210,6 +226,7 @@ ULN2003APG                      ,1    ,          ,Darlington array
 10u - 63v                       ,5    ,          ,elect
 22u - 25v                       ,1    ,          ,elect
 22u - 50v                       ,1    ,          ,elect
+33u - 25v                       ,3    ,Keltron   ,elect
 100u - 25v                      ,3    ,          ,elect
 220u - 16v                      ,1    ,          ,elect
 varcap 20p                      ,1    ,
@@ -225,7 +242,10 @@ BC558                           ,1
 S8550                           ,1
 S8050                           ,1
 TL431A                          ,1
-TIP122                          ,2
+TIP122                          ,5
+2N3904                          ,3
+2N3906                          ,3
+BF494B                          ,6
 
 ----Dev boards----
 arduino uno                     ,2
@@ -254,10 +274,14 @@ USB A                           ,1
 9v battery to DC jack connector ,2
 9v battery connector            ,3
 Type C panel mount F connector  ,1
+2 Pin Screw Terminal            ,4
+3 Pin Screw Terminal            ,2
+14-0-14V 1A center tap          ,1    ,          ,transformer
 
 ----Diodes----
 1N4007                          ,12   ,          ,General purpose Silicon Rectifier Diodes 1A 1000V
 1N5408                          ,1    ,          ,Silicon Rectifier Diodes 3A 1000V
+1N4148                          ,5    ,          ,Small Signal Fast Switching Diodes
 
 ----Sensors----
 joy stick                       ,1    ,
@@ -279,6 +303,7 @@ BMP280                          ,1    ,          ,absolute barometric pressure
 
 ----Misc----
 NTC 10D-9                       ,1
+LM317T                          ,4    ,XBLW      ,1.2 to 37V 1.5A voltage regulator
 rectifier                       ,1
 regulator                       ,1    ,          ,???
 L293D module                    ,1    ,          ,motor driver
@@ -290,3 +315,4 @@ relay SC5-S-DC5-7A 240V         ,1
 servo                           ,2
 DC motor                        ,6
 servo shafts                    ,1
+perf board 10x15cm              ,1
