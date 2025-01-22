@@ -52,6 +52,7 @@ CD4066BCN                       ,1    ,          ,CMOS Quad Bilateral Switch
 CD4518BE                        ,1    ,TI        ,CMOS Dual BCD Up counter
 EL817                           ,3    ,          ,4 pin IR optocoupler
 L293D                           ,1    ,ST        ,Quad Half-H Drivers
+L7812CV                         ,1    ,ST        ,12V Positive voltage regulator
 LM317T                          ,4    ,XBLW      ,1.2 to 37V 1.5A voltage regulator
 LM324N                          ,1    ,TI        ,Quad 32-V 1-MHz Opamp
 LM358N                          ,2    ,TI        ,Low-Power Dual-opamp
@@ -259,9 +260,9 @@ IC base - 14 pin                ,2
 IC base - 16 pin                ,4
 IC base - 28 pin                ,1
 IC base - 40 pin                ,2
-M-M jumper                     ,60
-M-F jumper                     ,17
-F-F jumper                     ,17
+M-M jumper                      ,60
+M-F jumper                      ,17
+F-F jumper                      ,17
 Female header                   ,40
 Male header                     ,16
 Aux extension                   ,1    ,          ,aux to aux
@@ -313,7 +314,9 @@ dial tone decoder (MT8870DE)    ,1
 15A fuse                        ,1
 pizo buzzer                     ,2
 relay SC5-S-DC5-7A 240V         ,1
+2ch relay module                ,1    ,          ,with SRD-05VDC-SL-C
 servo                           ,2
 DC motor                        ,6
 servo shafts                    ,1
 perf board 10x15cm              ,1
+perf board 7x9cm                ,1    ,          ,green color
